@@ -11,4 +11,4 @@ screen -L -Logfile '/server/screen.log' -d -S  minecraft -m sh -c "cd /server &&
 echo "[info] Minecraft Java process is running"
 export TERM=screen
 
-/usr/local/bin/gotty --port=8222 --title-format "MC" --credential root:root --permit-write screen -x minecraft
+/usr/local/bin/gotty --port=8222 --title-format "MC" --credential $username:$password --permit-write screen -x minecraft
