@@ -1,0 +1,11 @@
+services:
+  java17:
+    image: ghcr.io/nightmeer/minecraft_server_web:java-17
+    restart: unless-stopped
+    volumes:
+      - ./server:/server
+    environment:
+      - startfile=startserver.sh
+    ports:
+      - 25566:25565
+      - 8222:8222
