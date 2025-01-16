@@ -1,6 +1,6 @@
 services:
   java17:
-    image: ghcr.io/nightmeer/minecraft_server_web:java-17
+    image: ghcr.io/nightmeer/minecraftserverweb:java-17
     restart: unless-stopped
     volumes:
       - ./server:/server
